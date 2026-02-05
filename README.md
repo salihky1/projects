@@ -53,7 +53,7 @@ Retrieves last X events, optionally filtered by device.
 
 ---
 
-## 2️⃣ Contour & Convex Hull (`contour_convex_hull.py`)
+## 2️⃣ Contour & Convex Hull 
 
 Detects contours in an image, computes convex hulls, and visualizes them.
 
@@ -73,46 +73,4 @@ remover.save("output.png")
 Performs background subtraction on video files using OpenCV’s MOG2 algorithm.
 Usage:
 
-from background_subtractor import BackgroundSubtractor
-video_path = "video.mp4"
-bg_subtractor = BackgroundSubtractor(video_path)
-bg_subtractor.run()
-⚡ Requirements
-Install dependencies using pip:
-pip install -r requirements.txt
-Example requirements.txt:
-fastapi
-uvicorn
-pandas
-numpy
-scikit-learn
-opencv-python
-Pillow
-rembg
-firebase-admin
-joblib
-▶️ Running the FastAPI API
-Start the API:
-uvicorn smart_home_device_event_prediction_api:app --reload
-The API will be available at: http://127.0.0.1:8000
-Interactive documentation is available at: http://127.0.0.1:8000/docs
-💡 Notes
-The face recognition model predicts likely visitors based on hour of day.
-Motor and AC predictions include confidence scores; low confidence is flagged.
-Background removal produces sharp edges without alpha matting blur.
-Contour & convex hull detection visualizes shapes in blue (contours) and green (hulls).
-🛠 Technologies
-Python 3.x
-FastAPI
-OpenCV
-NumPy
-pandas
-scikit-learn
-Pillow
-rembg (U²-Net)
-Firebase Firestore
-📚 Future Improvements
-Add real-time sensor streaming support.
-Expand predictive models with additional features (light, motion sensors).
-Enhance face recognition with deep learning embeddings.
-Add user authentication for API access.
+from bac
