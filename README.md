@@ -4,16 +4,6 @@ This repository contains multiple Python modules for smart home automation, devi
 
 ---
 
-## 📂 Project Structure
-
-projects/
-│
-├── smart_home_device_event_prediction_api.py # Main FastAPI module for smart home predictions
-├── contour_convex_hull.py # Detects contours and convex hulls on images
-├── sharpest_cutout.py # Removes background from images using rembg
-├── background_subtractor.py # Video background subtraction
-├── requirements.txt
-└── README.md
 
 ## 1️⃣ Smart Home Device Event Prediction API
 
@@ -51,11 +41,29 @@ Provides predictive control for home devices including water pumps, AC units, an
 
 ---
 
-## 2️⃣ Contour & Convex Hull (`contour_convex_hull.py`)
-
-Detects contours in an image, computes convex hulls, and visualizes them.
-
-**Usage:**
-```python
-from contour_convex_hull import process_image
-process_image("yildiz.jpg")
+## 2️⃣ Iridescent Metallic Cubes & Blender Material Inspector
+Provides automatic inspection of Blender’s Principled BSDF shader inputs.
+Features
+Create Material
+Automatically creates a new material and enables node-based shading.
+Find Principled BSDF Node
+Searches for the Principled BSDF shader node inside the material node tree.
+List Shader Inputs
+Prints all available input sockets (Base Color, Metallic, Roughness, etc.) to the console.
+Automation Ready
+Can be extended for procedural material creation and shader scripting.
+2️⃣ Iridescent Metallic Cubes (Pygame)
+Renders animated metallic cubes with iridescent color transitions using Pygame.
+Features
+3D Cube Projection
+Draws pseudo-3D cubes using perspective projection.
+Iridescent Color Generation
+Uses sine wave functions to smoothly transition between blue, purple, turquoise, yellow, and orange.
+Metallic Highlight Effect
+Adds transparent faces and white edge highlights to simulate glossy metal.
+Multiple Rotating Cubes
+Displays four independently rotating cubes with different rotation speeds.
+Background Grid
+Draws a grid to enhance depth perception.
+Keyboard Control
+ESC key closes the application.
