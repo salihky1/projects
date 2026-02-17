@@ -67,3 +67,80 @@ Background Grid
 Draws a grid to enhance depth perception.
 Keyboard Control
 ESC key closes the application.
+
+# 👁 Project 3: Eye Tracking & Recording System
+
+# 📖 Description
+
+This project is an eye tracking and recording system built using OpenCV and Python.  
+It captures live video from a webcam, detects faces and eyes in real time, and calculates the center of the detected eye region.  
+The system draws crosshair lines on the screen to visualize eye position and records both video and eye coordinates.
+
+The project also includes:
+
+Real-time face and eye detection  
+Eye center calculation  
+Video recording  
+Coordinate logging to file  
+FPS display  
+Keyboard control system  
+
+This project is useful for learning:
+
+Face and eye detection using Haar cascades  
+Contour and region processing  
+Real-time video analysis  
+Object tracking fundamentals  
+Computer vision based interaction  
+
+# ✨ Features
+
+Live camera capture  
+Face detection  
+Eye detection  
+Crosshair visualization  
+Eye coordinate logging  
+Video recording system  
+FPS counter  
+Start / stop recording  
+On-screen UI panel  
+
+# 🛠 Technologies
+
+Python 3  
+OpenCV  
+NumPy  
+
+# ▶ How to Run
+1. Install dependencies  
+pip install opencv-python numpy  
+
+2. Run the script  
+python eye_tracking.py  
+
+# 🎮 Controls
+
+Q → Quit program  
+R → Start / Stop recording  
+
+# 📂 Output Files
+
+Recorded video file (.avi)  
+Eye coordinate log file (.txt or .csv)  
+
+Each session creates:
+
+A new video file with timestamp  
+A new log file with eye position data  
+
+# 🚀 Future Improvements
+
+Pupil detection  
+Blink (eye closing) detection  
+Gaze direction estimation  
+Heatmap generation  
+Mouse control using eyes  
+GUI version with PyQt  
+CSV export support  
+Multiple face tracking  
+
